@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
 }
 
 :root {
@@ -29,6 +30,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     transition: .5s;
+    z-index: 10;
 }
 
 ul {
@@ -104,30 +106,73 @@ ul li a {
 }
 
 .forside {
+    height: 100vh;
+    z-index: -1;
+}
+
+.forsideelementer {
     width: 100%;
     margin-top: 100px;
     position: absolute;
     justify-content: center;
     display: flex;
-    align-items: center ;
-    height: 60vh;
-    z-index: -1;
+    height: 90vh;
+    z-index: 1;
 }
 
 
-.forside img {
+.forsideelementer img {
     width: 100%;
-    height: 60vh;
+    height: 85vh;
     object-fit: cover;
-    filter: blur(5px);
+    filter: blur(.5px);
 }
 
-.forside h1 {
+.forsideelementer h1 {
+    width: 50%;
+    margin-top: 210px;
     position: absolute;
     font-family: "League Spartan", sans-serif;;
-    color: var(--primary);
-    font-size: 100px;
+    color: white;
+    font-size: 80px;
     text-align: center;
-
 }
 
+.forsideknap {
+    display: flex;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(255, 172, 18);
+    width: 250px;
+    height: 70px;
+    margin-top: 500px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: 1s;
+}
+
+.forsideknap:hover {
+    transform: scale(1.07);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.forsideknap a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.moeltidskasse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.moeltidskasse img{
+    width: 500px;
+    
+}
