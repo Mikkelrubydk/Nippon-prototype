@@ -11,3 +11,10 @@ document.addEventListener('scroll', () => {
         nav.classList.remove('scrolled')
     }
 })
+
+let fadeIn = document.getElementById(`fadein`)
+
+setTimeout(function() {
+    fadeIn.style.opacity = '1';
+    fadeIn.style.transition = `3s`
+});
