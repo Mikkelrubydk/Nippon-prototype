@@ -10,37 +10,28 @@
 </head>
 <body>
     <header>
-        <nav id="mynav">
+        <nav id="nav">
             <a href="index.html"><img class="logo" src="img/Nipponlogotekst.webp" alt="Nippon Logo"></a>
-            <ul>
-                <div class="dropdown">
-                    <li><a class="dropbtn" href="">Sådan fungerer det</a></li>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="">FAQ</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <li><a class="dropbtn" href="">Bestil</a></li>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="">Bland selv pakken</a>
-                        <a href="">Basic-pakken</a>
-                        <a href="">Fredagspakken</a>
-                        <a href="">Opstartspakken</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <li><a class="dropbtn" href="">Om os</a></li>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="">Hvem er vi</a>
-                        <a href="">Vores værdier</a>
-                        <a href="">Kontakt</a>
-                        
-                    </div>
-                </div>
+            <ul class="nav-links">
+                <li><a href="">Sådan fungerer det</a></li>
+                <li><a href="">Bestil</a></li>
+                <li><a href="">Om os</a></li>        
             </ul>
+            
+            <ul class="burgermenu">
+                <li><a href="">Sådan fungerer det</a></li>
+                <li><a href="">Bestil</a></li>
+                <li><a href="">Om os</a></li> 
+            </ul>
+
             <figure class="ikoner">
-                <img src="img/soegikon.webp" alt="Search Icon">
-                <img src="img/bruger.webp" alt="User Icon">
+                    <img src="img/soegikon.webp" alt="Search Icon">
+                    <img src="img/bruger.webp" alt="User Icon">
+                <figure class="burger" aria-expanded="false">
+                    <div class="top-bread"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bread"></div>
+                </figure>
             </figure>
         </nav>
     </header>
@@ -65,7 +56,7 @@
             </div>
         
             <div class="anmeldelsestekst">
-                <p>“Nippons fredags kasse er den letteste måde at imponere gæsterne  på, ingen regner med det og jeg udvikler nye færdigheder i køkkenet hver gang.”</p>
+                <p>“Nippons fredagskasse er den letteste måde at imponere gæsterne på, ingen regner med det og jeg udvikler nye færdigheder i køkkenet hver gang.”</p>
             </div>
         </div>
         <div class="anmeldelse2">
@@ -77,7 +68,7 @@
                 <img src="img/stjernefuld.webp" alt="fuld stjerne">
             </div>
             <div class="anmeldelsestekst">
-                <p>“Nippons fredags kasse er den letteste måde at imponere gæsterne  på, ingen regner med det og jeg udvikler nye færdigheder i køkkenet hver gang.”</p>
+                <p>"At tage en bid af verden uden at forlade hjemmet har aldrig været mere lækkert, og det er præcis, hvad Nippon formår at levere. Kun ros herfra"</p>
             </div>
         </div>
     </section>
@@ -87,23 +78,24 @@
         <div>
             <img src="img/bestil.webp" alt="bestil online billede">
             <p>Bestil Online</p>
-            <div class="howtoknap">Læs mere</div>
+            <div class="howtoknap"><a href="">Læs mere</a></div>
         </div>
         <div>
             <img src="img/leveret.webp" alt="Nipponkasse leveret ved døren">
             <p>Få leveret direkte til døren</p>
-            <div class="howtoknap">Læs mere</div>
+            <div class="howtoknap"><a href="">Læs mere</a></div>
         </div>
         <div>
             <img src="img/lavmad.webp" alt="tilberedning af mad">
             <p>Lav mad</p>
-            <div class="howtoknap">Læs mere</div>
+            <div class="howtoknap"><a href="">Læs mere</a></div>
         </div>
     </section>
 
     <section class="fredagskassen">
         <h2>Fredagskassen</h2>
-        <p>Få fredags måltidet leveret lige til døren, og forfin hverdagen med de små og budget venlige fornøjelser.</p>
+        <p>Få fredagsmåltidet leveret lige til døren, og forfin hverdagen med de små og budgetvenlige fornøjelser.</p>
+        <div class="fredagsknap"><a href="">Se mere</a></div>
     </section>
 
     <footer>

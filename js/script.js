@@ -18,3 +18,18 @@ setTimeout(function() {
     fadeIn.style.opacity = '1';
     fadeIn.style.transition = `3s`
 });
+
+const burgerElement = document.querySelector('.burger');
+
+burgerElement.addEventListener('click', () => {
+  const isExpanded = burgerElement.getAttribute('aria-expanded') === 'true'; 
+  burgerElement.setAttribute('aria-expanded', !isExpanded);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.getElementById('nav');
+
+    burgerElement.addEventListener('click', function() {
+        nav.classList.toggle('nav-active');
+    });
+});

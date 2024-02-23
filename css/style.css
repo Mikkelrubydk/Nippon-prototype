@@ -21,9 +21,18 @@ body {
 h2 {
     text-align: center;
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 45px;
     color: var(--primary);
 }
+
+p {
+    font-size: 25px;
+    word-spacing: 4px;
+    font-weight: 300;
+}
+
+
+
 
 .logo {
     width: 200px;
@@ -48,20 +57,25 @@ nav {
     z-index: 10;
 }
 
-ul {
+.nav-links {
     display: flex;
     list-style: none;
 }
 
-ul li {
+.nav-links li {
     padding: 0 50px;
 }
 
-ul li a {
+.nav-links li a {
     color: black;
     font-size: 25px;
     text-decoration: none;
     font-family: "League Spartan", sans-serif;
+}
+
+
+  .burgermenu {
+    display: none;
 }
 
 .ikoner {
@@ -74,52 +88,9 @@ ul li a {
     width: 40px;
 
 }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    margin-left: 40px;
-    opacity: 0;
-    position: absolute;
-    background-color: #f2e8db;
-    width: 200px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    z-index: 1;
-
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 20px 16px;
-    border-bottom: .1px solid rgba(0,0,0,0.5);
-    font-size: 20px;
-    font-family: "League Spartan", sans-serif; ;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    cursor: pointer;
-
-
-  }
-
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    opacity: 1;
-    transition: .2s;
-}
-  
 
 .scrolled {
-    background-color: white;
+    background-color: var(--background);
     transition: .2s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
@@ -153,7 +124,7 @@ ul li a {
     position: absolute;
     font-family: "League Spartan", sans-serif;;
     color: white;
-    font-size: 6vw;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -162,8 +133,8 @@ ul li a {
     position: absolute;
     border-radius: 20px;
     background-color: var(--secondary);
-    width: 250px;
-    height: 70px;
+    width: 200px;
+    height: 60px;
     margin-top: 500px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: 1s;
@@ -186,36 +157,30 @@ ul li a {
     font-weight: 600;
 }
 
-.moeltidskasse {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.moeltidskasse img{
-    width: 500px;
-    
-}
-
 #fadein {
     opacity: 0;
 }
 
 .anmeldelser {
     display: flex;
-    margin-left: 100px;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .anmeldelse1 {
     width: 50%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
 .anmeldelse2 {
     width: 50%;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,10 +190,7 @@ ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    font-size: 30px;
-    word-spacing: 4px;
-    font-weight: 300;
+    width: 75%;
 }
 
 .stjerner {
@@ -237,7 +199,7 @@ ul li a {
 }
 
 .stjerner img {
-    width: 50px;
+    width: 40px;
 }
 
 .howto {
@@ -245,26 +207,150 @@ ul li a {
     flex-wrap: wrap;
     margin-top: 50px;
     justify-content: center;
-    gap: 20px 50px;
+    gap: 20px 100px;
+    margin-bottom: 100px;
 }
 
 .howto img {
-    width: 350px;
+    width: 300px;
 }
 
 .howto p {
-    font-size: 30px;
     margin: 10px 0;
 }
 
 .howtoknap {
-    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     border-radius: 10px;
     background-color: var(--primary);
     width: 150px;
     height: 45px;
 }
+
+.howtoknap a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.fredagskassen {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.fredagsknap {
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--secondary);
+    width: 200px;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: 1s;
+}
+
+.fredagsknap a {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.fredagsknap:hover {
+    transform: scale(1.07);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fredagskassen p {
+    margin: 40px 0 ;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        border: 0;
+        padding: 0;
+        gap: 7px;
+        background: none;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .burger :where(.top-bread, .meat, .bottom-bread) {
+        background: var(--primary);
+        height: 4px;
+        width: 50%;
+        border-radius: 4px;
+        display: block;
+        transition: transform 300ms ease;
+      }
+      
+      .burger[aria-expanded=true] .top-bread {
+        transform: translateY(calc(5px + 6px)) rotate(45deg);
+      }
+      
+      .burger[aria-expanded=true] .meat {
+        transform: rotate(45deg);  
+      }
+      
+      .burger[aria-expanded=true] .bottom-bread {
+        transform: translateY(calc(-4px + -7px)) rotate(-45deg);
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+
+.nav-active .nav-links {
+    display: none;
+}
+
+.nav-active .burgermenu {
+    width: 100%;
+    right: 0;
+    margin-top: 100px;
+    height: 100%;
+    background-color: rgba(39, 51, 100, 0.9);
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.nav-active .burgermenu li {
+    margin: 40px 0;
+    margin-top: 100px;
+    filter: blur(0px);
+
+
+}
+
+.nav-active .burgermenu li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 50px;
+}
+
+.forsideelementer h1 {
+    font-size: 3rem;
+}
+}
+
