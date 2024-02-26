@@ -353,6 +353,11 @@ h1 {
 
 /************* Sådan fungere det **************/
 
+.mg {
+    width: 100%;
+    margin: 100px 0;
+}
+
 .read_more_container{
     display: flex;
     flex-direction: column;
