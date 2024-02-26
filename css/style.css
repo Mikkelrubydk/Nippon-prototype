@@ -363,7 +363,11 @@ h1 {
     
 }
 
-/************* Sådan fungere det **************/
+/************* Sådan fungerer det **************/
+
+.faqmain {
+    height: 100%;
+}
 
 .mg {
     width: 100%;
