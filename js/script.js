@@ -55,4 +55,4 @@ document.addEventListener("DOMContentLoaded", function() {
         userDropdown.style.display = "none";
         userDropdown.style.transition = "1s";
     });
-});
+}); 
