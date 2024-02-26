@@ -269,8 +269,20 @@ h1 {
     margin-bottom: 100px;
 }
 
-.howto img {
+.howto-container {
     width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.howto img {
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+
+.howto img:hover {
+    scale: 1.2;
+    transform: rotate(5deg);
 }
 
 .howto h3 {
