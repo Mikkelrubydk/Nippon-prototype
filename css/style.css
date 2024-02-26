@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family: "League Spartan", sans-serif;
     scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -30,9 +32,6 @@ p {
     word-spacing: 4px;
     font-weight: 300;
 }
-
-
-
 
 .logo {
     width: 200px;
@@ -96,31 +95,32 @@ nav {
 }
 
 .forside {
-    height: 100vh;
+    height: 85vh;
     z-index: -1;
+    padding-top: 100px;
 }
 
 .forsideelementer {
-    width: 100%;
-    margin-top: 100px;
-    position: absolute;
-    justify-content: center;
     display: flex;
-    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
     z-index: 1;
 }
 
 
 .forsideelementer img {
+    position: absolute;
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     object-fit: cover;
     filter: blur(.5px);
 }
 
 .forsideelementer h1 {
+    display: flex;
     width: 60%;
-    margin-top: 210px;
     position: absolute;
     font-family: "League Spartan", sans-serif;;
     color: white;
@@ -131,11 +131,11 @@ nav {
 .forsideknap {
     display: flex;
     position: absolute;
+    margin-top: 350px;
     border-radius: 20px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     width: 200px;
     height: 60px;
-    margin-top: 500px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: 1s;
 }
@@ -151,10 +151,10 @@ nav {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     margin: 0 auto;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #fadein {
@@ -195,6 +195,7 @@ nav {
 
 .stjerner {
     margin-bottom: 20px;
+
     
 }
 
@@ -215,16 +216,23 @@ nav {
     width: 300px;
 }
 
+.howto h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
 .howto p {
     margin: 10px 0;
+    width: 320px;
 }
 
 .howtoknap {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    background-color: var(--primary);
+    border-radius: 20px;
+    background-color: var(--green);
     width: 150px;
     height: 45px;
 }
@@ -247,7 +255,7 @@ nav {
 .fredagsknap {
     display: flex;
     border-radius: 20px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     width: 200px;
     height: 60px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -261,7 +269,7 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .fredagsknap:hover {
@@ -273,6 +281,99 @@ nav {
 .fredagskassen p {
     margin: 40px 0 ;
 }
+
+.formetbillede {
+    width: 100%;
+    margin-top: -100px;
+}
+
+.formetbillede img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-container {
+    z-index: 1;
+    display: flex;
+    color: black;
+    justify-content: space-evenly;
+    font-size: 25px;
+    font-weight: 300;
+    gap: 100px;
+    flex-wrap: wrap;
+    word-spacing: 4px;
+    padding: 60px 60px;
+    width: 100%;
+    background-color: var(--background);
+  }
+
+  .footermenu h3, .footerkontakt h3, .footerinfo h3 {
+    font-weight: 500;
+  }
+
+  .footermenu {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .footermenu ul li {
+    padding: 10px 0;
+  }
+
+  .footermenu ul li a {
+    color: black;
+  }
+
+  .footermenu h3, .footerkontakt h3, .footerinfo h3 {
+    margin-bottom: 15px;
+  }
+
+  .footerkontakt {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .footerkontakt ul li {
+    padding: 10px 0;
+  }
+
+  .footerkontakt ul li a {
+    color: black;
+  }
+
+  .footerinfo {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .footerinfo p {
+    margin-bottom: 15px;
+  }
+
+  .socials img {
+    width: 50px;
+    fill: black;
+    transition: .5s;
+  }
+
+  .socials img:hover {
+    transform: scale(1.1);
+    transition: .5s;
+  }
+
+  .footercopyright {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .footercopyright p {
+    font-size: 20px;
+    opacity: 50%;
+  }
 
 @media only screen and (max-width: 1024px) {
 
@@ -325,7 +426,7 @@ nav {
     right: 0;
     margin-top: 100px;
     height: 100%;
-    background-color: rgba(39, 51, 100, 0.9);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     position: fixed;
     top: 0;
     flex-direction: column;
@@ -337,8 +438,6 @@ nav {
 .nav-active .burgermenu li {
     margin: 40px 0;
     margin-top: 100px;
-    filter: blur(0px);
-
 
 }
 
@@ -352,5 +451,13 @@ nav {
 .forsideelementer h1 {
     font-size: 3rem;
 }
+
+.howto {
+    gap: 75px 0;
+}
+
+.footer-container {
+    justify-content: flex-start;
+  }
 }
 
