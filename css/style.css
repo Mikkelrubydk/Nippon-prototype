@@ -14,6 +14,7 @@
     --secondary: #a31f25;
     --background: #fef7ef;
     --green: #8aa357;
+    --lightgreen:#CCD6B0;
 }
 
 body {
@@ -125,6 +126,24 @@ nav {
     transition: .2s;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
+
+main {
+    height: 85vh;
+    z-index: -1;
+    padding-top: 100px;
+    margin: 0 15%;
+}
+
+h1 {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;;
+    color: var(--primary);
+    font-size: 2.5rem;
+    padding: 60px 0;
+}
+
+/************* Forside **************/
+
 
 .forside {
     height: 85vh;
@@ -326,6 +345,34 @@ nav {
     
 }
 
+/************* Sådan fungere det **************/
+
+.read_more {
+    display: flex;
+    background-color: var(--lightgreen);
+    border-radius: 70px;
+    padding: 40px 50px;
+}
+
+.mockupvarevogn_transparant{
+    width: 50%;
+}
+
+.read_more_indhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.read_more_indhold p {
+    text-align: left;
+    line-height: 30px;
+}
+
+/************* Footer **************/
+
 .footer-container {
     position: absolute;
     z-index: 1;
@@ -464,6 +511,8 @@ nav {
 .soeg404 img {
     width: 40px;
 }
+
+/********** Media **********/
 
 @media only screen and (max-width: 1024px) {
 
