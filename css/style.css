@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -290,6 +290,7 @@ nav {
 .formetbillede img {
     width: 100%;
     object-fit: cover;
+    
 }
 
 .footer-container {
