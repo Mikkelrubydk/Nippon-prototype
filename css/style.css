@@ -315,6 +315,12 @@ h1 {
 
 /************* Sådan fungere det **************/
 
+.read_more_container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .read_more {
     display: flex;
     background-color: var(--lightgreen);
@@ -324,6 +330,21 @@ h1 {
 
 .mockupvarevogn_transparant{
     width: 50%;
+}
+
+.plante {
+    width: 20%;
+}
+
+.jord_til_bord {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.måltidskasse2 {
+    width: 35%;
+    margin: 0 85px;
 }
 
 .read_more_indhold {
