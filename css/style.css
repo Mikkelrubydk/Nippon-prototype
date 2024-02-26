@@ -480,6 +480,7 @@ h1 {
 
 .fejl404 h1 {
     font-size: 60px;
+    padding: 0;
     color: var(--secondary);
 }
 
