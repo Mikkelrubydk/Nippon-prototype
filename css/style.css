@@ -94,6 +94,20 @@ nav {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
+main {
+    height: 85vh;
+    z-index: -1;
+    padding-top: 100px;
+    margin: 0 20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/************* Forside **************/
+
+
 .forside {
     height: 85vh;
     z-index: -1;
@@ -294,6 +308,13 @@ nav {
     
 }
 
+/************* Sådan fungere det **************/
+
+
+
+
+/************* Footer **************/
+
 .footer-container {
     z-index: 1;
     display: flex;
@@ -376,6 +397,8 @@ nav {
     font-size: 20px;
     opacity: 50%;
   }
+
+/********** Media **********/
 
 @media only screen and (max-width: 1024px) {
 
