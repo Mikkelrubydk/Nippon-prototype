@@ -318,7 +318,7 @@ h1 {
 .read_more {
     display: flex;
     background-color: var(--lightgreen);
-    border-radius: 10%;
+    border-radius: 70px;
     padding: 40px 50px;
 }
 
