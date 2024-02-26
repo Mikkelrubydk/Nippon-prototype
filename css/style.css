@@ -19,6 +19,10 @@
 
 body {
     background-color: #fef8f0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
 }
 
 h2 {
@@ -132,6 +136,8 @@ main {
     z-index: -1;
     padding-top: 100px;
     margin: 0 15%;
+    min-height: 100vh;
+    position: relative;
 }
 
 h1 {
@@ -359,6 +365,11 @@ h1 {
 
 /************* Sådan fungere det **************/
 
+.mg {
+    width: 100%;
+    margin: 100px 0;
+}
+
 .read_more_container{
     display: flex;
     flex-direction: column;
@@ -374,21 +385,20 @@ h1 {
 
 .mockupvarevogn_transparant{
     width: 50%;
-}
+    margin-right: 40px;
 
-.plante {
-    width: 20%;
 }
 
 .jord_til_bord {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 50%;
+    padding: 40px 0;
+    margin-right: 40px;
 }
 
+
 .måltidskasse2 {
-    width: 35%;
-    margin: 0 85px;
+    width: 50%;
+    margin: 40px 20px -40px 20px;
 }
 
 .read_more_indhold {
@@ -404,10 +414,30 @@ h1 {
     line-height: 30px;
 }
 
+.faq{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+.faq_icon {
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;;
+    color: var(--primary);
+    font-size: 1.7rem;
+
+}
+
 /************* Footer **************/
 
 .footer-container {
-    position: absolute;
+    position: relative;
+    bottom: 0;
+    left: 0;
     z-index: 1;
     display: flex;
     color: black;
