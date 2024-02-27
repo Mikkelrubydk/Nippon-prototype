@@ -695,7 +695,7 @@ form{
 
 .personer {
     margin-bottom: 30px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .personer, .måltider {
@@ -703,7 +703,6 @@ form{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 25px ;
 }
 
 .personer ol, .måltider ol {
@@ -712,8 +711,8 @@ form{
 
 .personer ol li, .måltider ol li {
     background-color: var(--cremewhite);
-    padding: 20px 50px;
-    
+    padding: 10px 50px;
+    font-size: 25px;
 }
 
 .valgt {
@@ -743,6 +742,85 @@ form{
     width: 40px;
 }
 
+.madudvalg {
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.madretter img {
+    width: 250px;
+    margin-bottom: 10px;
+ 
+}
+
+.tid {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tid img {
+    width: 30px;
+    height: 30px;
+}
+
+.madikon img {
+    width: 30px;
+}
+
+.vælgknap {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 35px;
+    background-color: var(--primary);
+}
+
+.vælgknap a {
+    color: white;
+}
+
+.videreknap {
+    margin-top: 100px;
+}
+
+.videreknap div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 250px;
+    background-color: #8aa357;
+    height: 50px;
+}
+
+.videreknap div a {
+    color: white;
+    
+}
+
+.coloroverlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCD6B0;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.coloroverlay h3 {
+    font-weight: 600;
+}
 
 /********** Media **********/
 
@@ -797,6 +875,7 @@ form{
     right: 0;
     margin-top: 100px;
     height: 100%;
+    background-color: rgba(39, 51, 100, 0.9);;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     position: fixed;
     top: 0;
