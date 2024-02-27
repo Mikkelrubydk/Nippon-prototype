@@ -1083,7 +1083,7 @@ form{
 
 .starterpakke-main img {
     width: 800px;
-    margin-right: -285px;
+    margin-right: -200px;
 }
 
 .tekst-box {
@@ -1126,6 +1126,10 @@ form{
     border-radius: 20px;
 }
 
+.arrow .left {
+    transform: rotate(180deg);
+}
+
 .se-mere-knap a {
     color: #fef7ef;
     font-size: 25px;
@@ -1139,15 +1143,14 @@ form{
 }
 
 .slider {
+    overflow-x: scroll;
     width: 1230px;
-    overflow: hidden;
     display: flex;
     padding: 30px 10px;
     position: relative;
 }
 
 .slider .product {
-    width: 400px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-right: 17px;
@@ -1155,10 +1158,14 @@ form{
 }
 
 .slider .product img {
-    width: 230px;
-    height: 600px;
-    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    object-fit:contain;
     border-radius: 10px 10px 0 0;
+}
+
+.slider-image img {
+    width: 400px;
 }
 
 .slider .product .information {
