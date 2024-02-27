@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-:root {
+:root { 
     --primary: #273364;
     --secondary: #a31f25;
     --background: #fef7ef;
@@ -441,6 +441,28 @@ h4 {
 
 }
 
+/************* Betalings oplysninger **************/
+.payment{
+    display: flex;
+    justify-content: center;
+
+}
+
+label {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+input {
+    height: 30px;
+    width: 70%;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+
 /************* Footer **************/
 
 .footer-container {
@@ -685,3 +707,68 @@ h4 {
   }
 }
 
+/********** Bestil **********/
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image-box img {
+    height: 100px;
+    width: auto;
+    object-fit: cover;
+}
+
+.box {
+    background-color: #CCD6B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary);
+}
+
+.box p {
+    font-size: 20px;
+}
+
+.box-h3 {
+    color: var(--primary);
+    font-size: 40px;
+}
+
+.box-bestilling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.indhold-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.under-box-tekst {
+    display: flex;
+    flex-direction: row
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main img {
+    height: auto;
+    width: 1500px;
+    margin-right: -285px;
+}
+
+.tekst-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: -220px;
+}
