@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -13,6 +13,7 @@
     --primary: #273364;
     --secondary: #a31f25;
     --background: #fef7ef;
+    --cremewhite: #F3EADF;
     --green: #8aa357;
     --lightgreen:#CCD6B0;
 }
@@ -75,7 +76,6 @@ nav {
     color: black;
     font-size: 25px;
     text-decoration: none;
-    font-family: "League Spartan", sans-serif;
 }
 
 
@@ -142,7 +142,6 @@ main {
 
 h1 {
     text-align: center;
-    font-family: "League Spartan", sans-serif;;
     color: var(--primary);
     font-size: 2.5rem;
     padding: 60px 0;
@@ -179,16 +178,16 @@ h1 {
     display: flex;
     width: 60%;
     position: absolute;
-    font-family: "League Spartan", sans-serif;;
+    line-height: 75px;
     color: white;
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: center;
 }
 
 .forsideknap {
     display: flex;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 400px;
     border-radius: 20px;
     background-color: var(--primary);
     width: 200px;
@@ -294,7 +293,7 @@ h1 {
 .howto p {
     margin: 10px 0;
     width: 320px;
-    height: 75px;
+    height: 120 px;
 }
 
 .howtoknap {
@@ -395,7 +394,6 @@ h1 {
 .mockupvarevogn_transparant{
     width: 50%;
     margin-right: 40px;
-
 }
 
 .jord_til_bord {
@@ -423,6 +421,17 @@ h1 {
     line-height: 30px;
 }
 
+.faaq {
+    padding: 50px 0;
+}
+
+.faqer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .faq{
     display: flex;
     justify-content: space-between;
@@ -433,24 +442,35 @@ h1 {
     width: 85px;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
+    transition: 1s;
+    cursor: pointer;
 }
 
-.faqer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.faq_icon:hover{
+    box-shadow: 0 10 10 8 2 var(--primary) ;
+    opacity: 50%;
+    border-radius: 100px;
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.faq_icon:active{
+    box-shadow: 0 10 10 8 2 var(--primary) ;
+    opacity: 50%;
+    border-radius: 100px;
+    
 }
 
 h4 {
     text-align: center;
-    font-family: "League Spartan", sans-serif;;
     color: var(--primary);
     font-size: 1.7rem;
 
 }
 
-/* fold dowen */
+/* fold down */
 
 .reply {
     display: none; /* Hide the reply content initially */
@@ -477,29 +497,112 @@ h4 {
     margin-right: 10px; /* Example margin for spacing between image and paragraph */
 }
 
+/* Fandt du ikke det du ledte efter */
+.dropdown-content {
+    display: none; /* Skjul dropdown indholdet som standard */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/*********** kvitering *********/
+
+.kvitering_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.baggrund {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 10px;
+}
+
+.kvitering3 {
+    position: absolute;
+    top: 390px;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    margin: 0 auto;
+}
+
+.krys {
+    position: absolute;
+    top: 455px;
+    right: 0;
+    left: 400px;
+    bottom: 10px;
+    margin: 0 auto; 
+    width: 40px;
+}
 
 /************* Betalings oplysninger **************/
+form{
+    width: 100%;
+}
+
+.inputbox{
+    display: flex;
+}
 .payment{
     display: flex;
     justify-content: center;
-
 }
 
-label {
+.labelpay {
     font-size: 25px;
-    line-height: 50px;
+    line-height: 80px;
+    color: var(--primary);
 }
 
-input {
-    height: 30px;
-    width: 800px;
+.infobox {
+    height: 2.2em;
+    width: 100%;
     display: block;
     position: relative;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px #f3eadf;
 }
 
 .names{
-    display: inline-block;
-    position: relative;
+    display: flex;
+    position: row;
+    gap: 40px;
+}
+
+.payicon{
+    width: 3% ;
+}
+
+.cardicon{
+    width: 7%;
+    height: 50%;
+    border: solid var(--primary) 2px;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.personal{
+    font-size: 2.2em;
+    color: var(--primary);
+}
+
+.betalingsinfo{
+    margin-top: 75px;
+}
+
+.personalinfo{
+    margin-top: 75px;
 }
 
 /************* Footer **************/
@@ -626,12 +729,13 @@ input {
 .soeg404 {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .soegefelt {
-    width: 400px;
+    width: 600px;
     height: 50px;
     border-radius: 20px;
     padding: 20px;
@@ -653,10 +757,159 @@ input {
     margin: 0 auto;
 }
 
+.tilbageknap {
+    position: absolute;
+    left: 0;
+    top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #273364;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    color:white;
+    font-size: 40px;
+}
+
+
 .købsprocess img {
     width: 100%;
 }
 
+.personer {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.personer, .måltider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.personer ol, .måltider ol {
+    display: flex;
+}
+
+.personer ol li, .måltider ol li {
+    background-color: var(--cremewhite);
+    padding: 10px 50px;
+    font-size: 25px;
+}
+
+.valgt {
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+}
+
+.kategorier {
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.kategoriudvalg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--cremewhite);
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.kategoriudvalg img {
+    width: 40px;
+}
+
+.madudvalg {
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.madretter img {
+    width: 275px;
+    margin-bottom: 10px;
+ 
+}
+
+.tid {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tid img {
+    width: 30px;
+    height: 30px;
+}
+
+.madikon img {
+    width: 30px;
+}
+
+.vælgknap {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 35px;
+    background-color: var(--primary);
+}
+
+.vælgknap a {
+    color: white;
+}
+
+.videreknap {
+    margin-top: 100px;
+}
+
+.videreknap div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 350px;
+    height: 60px;
+    background-color: #8aa357;
+
+}
+
+.videreknap div a {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.coloroverlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CCD6B0;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.coloroverlay h3 {
+    font-weight: 600;
+}
 
 /********** Media **********/
 
@@ -711,6 +964,7 @@ input {
     right: 0;
     margin-top: 100px;
     height: 100%;
+    background-color: rgba(39, 51, 100, 0.9);;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     position: fixed;
     top: 0;
@@ -821,7 +1075,7 @@ input {
 .starterpakke-main img {
     width: 800px;
     margin-right: -285px;
-} 
+}
 
 .tekst-box {
     display: flex;
