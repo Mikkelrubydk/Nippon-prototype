@@ -477,6 +477,26 @@ h4 {
     margin-right: 10px; /* Example margin for spacing between image and paragraph */
 }
 
+
+/************* Betalings oplysninger **************/
+.payment{
+    display: flex;
+    justify-content: center;
+
+}
+
+label {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+input {
+    height: 30px;
+    width: 70%;
+    display: inline-block;
+    position: relative;
+}
+
 /************* Footer **************/
 
 .footer-container {
