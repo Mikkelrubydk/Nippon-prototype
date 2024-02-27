@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "League Spartan", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
@@ -13,6 +13,7 @@
     --primary: #273364;
     --secondary: #a31f25;
     --background: #fef7ef;
+    --cremewhite: #F3EADF;
     --green: #8aa357;
     --lightgreen:#CCD6B0;
 }
@@ -75,7 +76,6 @@ nav {
     color: black;
     font-size: 25px;
     text-decoration: none;
-    font-family: "League Spartan", sans-serif;
 }
 
 
@@ -142,7 +142,6 @@ main {
 
 h1 {
     text-align: center;
-    font-family: "League Spartan", sans-serif;;
     color: var(--primary);
     font-size: 2.5rem;
     padding: 60px 0;
@@ -179,16 +178,15 @@ h1 {
     display: flex;
     width: 60%;
     position: absolute;
-    font-family: "League Spartan", sans-serif;;
     color: white;
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: center;
 }
 
 .forsideknap {
     display: flex;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 400px;
     border-radius: 20px;
     background-color: var(--primary);
     width: 200px;
@@ -444,7 +442,6 @@ h1 {
 
 h4 {
     text-align: center;
-    font-family: "League Spartan", sans-serif;;
     color: var(--primary);
     font-size: 1.7rem;
 
@@ -676,6 +673,32 @@ input {
 
 .købsprocess img {
     width: 100%;
+}
+
+.personer {
+    margin-bottom: 30px;
+}
+
+.personer, .måltider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px ;
+}
+
+.personer ol, .måltider ol {
+    display: flex;
+}
+
+.personer ol li, .måltider ol li {
+    background-color: var(--cremewhite);
+    padding: 20px 50px;
+}
+
+.valgt {
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
 }
 
 
