@@ -365,9 +365,9 @@ h1 {
 
 /************* Sådan fungerer det **************/
 
-/* .faqmain {
+.faqmain {
     height: 100%;
-} */
+}
 
 .gif img {
     width: 100%;
@@ -435,6 +435,13 @@ h1 {
     justify-content: center;
 }
 
+.faqer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 h4 {
     text-align: center;
     font-family: "League Spartan", sans-serif;;
@@ -468,6 +475,31 @@ h4 {
     width: 30px; /* Example width for the image */
     height: 30px; /* Example height for the image */
     margin-right: 10px; /* Example margin for spacing between image and paragraph */
+}
+
+
+/************* Betalings oplysninger **************/
+.payment{
+    display: flex;
+    justify-content: center;
+
+}
+
+label {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+input {
+    height: 30px;
+    width: 800px;
+    display: block;
+    position: relative;
+}
+
+.names{
+    display: inline-block;
+    position: relative;
 }
 
 /************* Footer **************/
