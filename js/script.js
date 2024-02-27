@@ -90,3 +90,6 @@ function valgtListeelement(element) {
     // Tilføj valgt klasse til det klikkede element
     element.classList.add('valgt');
   }
+
+
+// kvitering
