@@ -73,10 +73,10 @@ $(document).ready(function() {
 
 function valgtListeelement(element) {
     // Find den overordnede sektion
-    var sektion = element.closest('section');
+    var section = element.closest('section');
 
     // Fravælg alle listeelementer i samme sektion
-    var listeelementer = sektion.querySelectorAll('li');
+    var listeelementer = section.querySelectorAll('li');
     listeelementer.forEach(function(li) {
       li.classList.remove('valgt');
     });
