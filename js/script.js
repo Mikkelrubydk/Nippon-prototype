@@ -56,3 +56,20 @@ document.addEventListener("DOMContentLoaded", function() {
         userDropdown.style.transition = "1s";
     });
 }); 
+
+// FAQ
+
+$(document).ready(function() {
+    $(".fold_reply").click(function() {
+        var target = $(this).data("target"); // får target reply div fra data attribute
+        
+        //  Denne linje skjuler alle "reply" div'er undtagen den, der er klikket på
+        $(".reply").not(target).slideUp("fast");
+        
+        // Dette betyder, at hvis den "reply" div er skjult, vil den glide ned og blive synlig, og hvis den allerede er synlig, vil den glide op og blive skjult.
+        $(target).slideToggle("slow");
+    });
+});
+
+
+

@@ -365,13 +365,13 @@ h1 {
 
 /************* Sådan fungerer det **************/
 
-.faqmain {
+/* .faqmain {
     height: 100%;
-}
+} */
 
 .mg {
     width: 100%;
-    margin: 100px 0;
+    margin: 50px 0 100px 0;
 }
 
 .read_more_container{
@@ -425,7 +425,9 @@ h1 {
 }
 
 .faq_icon {
-    width: 100%;
+    width: 85px;
+    align-items: center;
+    justify-content: center;
 }
 
 h4 {
@@ -434,6 +436,33 @@ h4 {
     color: var(--primary);
     font-size: 1.7rem;
 
+}
+
+/* fold dowen */
+
+.reply {
+    display: none; /* Hide the reply content initially */
+    margin-top: 10px; /* Example margin */
+}
+
+.fold_reply {
+    cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+}
+
+.plus {
+    width: 100%;
+}
+
+.reply-content {
+    display: flex; /* Use flexbox layout for content */
+    align-items: center; /* Center items vertically */
+    padding-bottom: 40px;
+}
+
+.plus {
+    width: 30px; /* Example width for the image */
+    height: 30px; /* Example height for the image */
+    margin-right: 10px; /* Example margin for spacing between image and paragraph */
 }
 
 /************* Footer **************/

@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Hina+Mincho&family=League+Spartan:wght@100..900&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@100..900&family=Sawarabi+Gothic&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Yomogi&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Nippon Forside</title>
 </head>
@@ -82,36 +83,180 @@
 <section>
     <h2>FAQ</h2>
     <div class="faq">
+        <!-- spørgsmål 1 -->
         <section class="faqer">
-            <img src="../img/faq/levering.png" alt="" class="faq_icon">
+            <div class="fold_reply" data-target=".reply1">
+                <img src="../img/faq/levering.png" alt="Toggle Reply" class="faq_icon">
+            </div>
             <h4>Levering</h4>
         </section>
+        <!-- spørgsmål 2 -->
         <section class="faqer">
-            <img src="../img/faq/levering.png" alt="" class="faq_icon">
-            <h4>Levering</h4>
+            <div class="fold_reply" data-target=".reply2">
+                <img src="../img/faq/indgredienser.png" alt="Toggle Reply" class="faq_icon">
+            </div>
+            <h4>Indgredienser</h4>
         </section>
+        <!-- spørgsmål 3 -->
         <section class="faqer">
-            <img src="../img/faq/levering.png" alt="" class="faq_icon">
-            <h4>Levering</h4>
+            <div class="fold_reply" data-target=".reply3">
+                <img src="../img/faq/bestilling.png" alt="Toggle Reply" class="faq_icon">
+            </div>
+            <h4>Bestilling</h4>
         </section>
+        <!-- spørgsmål 4 -->
         <section class="faqer">
-            <img src="../img/faq/levering.png" alt="" class="faq_icon">
-            <h4>Levering</h4>
+            <div class="fold_reply" data-target=".reply4">
+                <img src="../img/faq/generelt.png" alt="Toggle Reply" class="faq_icon">
+            </div>
+            <h4>Generelt</h4>
         </section>
+        <!-- spørgsmål 5 -->
         <section class="faqer">
-            <img src="../img/faq/levering.png" alt="" class="faq_icon">
-            <h4>Levering</h4>
+            <div class="fold_reply" data-target=".reply5">
+                <img src="../img/faq/bruger.png" alt="Toggle Reply" class="faq_icon">
+            </div>
+            <h4>Bruger</h4>
         </section>
+        <!-- spørgsmål 6 -->
         <section class="faqer">
-            <img src="../img/faq/levering.png" alt="" class="faq_icon">
-            <h4>Levering</h4>
+            <div class="fold_reply" data-target=".reply6">
+                <img src="../img/faq/opskrifter.png" alt="Toggle Reply" class="faq_icon">
+            </div>
+            <h4>Opskrifter</h4>
         </section>
     </div>
+    
+    <!-- Svar 1 -->
+    <div class="reply reply1">
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvor og hvornår leverer I?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan ændre jeg min leveringsdag?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan springer jeg leveringer over?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan sporer jeg min levering?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvad sker der, hvis jeg ikke er hjemme?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Kan jeg få min måltidskasse leveret hver anden uge eller en gang om måneden?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Fandt du ikke hvad du ledte efter?</p>
+        </div>
+    </div>
+    <!-- Svar 2 -->
+    <div class="reply reply2">
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvor kommer ingredienserne fra?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Tager I højde for allergier?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan holder jeg ingredienserne friske?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvilke ingredienser skal jeg have derhjemme?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan sikrer I kvaliteten af jeres frugt og grønt?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Fandt du ikke hvad du ledte efter?</p>
+        </div>
+    </div>
+    <!-- Svar 3 -->
+    <div class="reply reply3">
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Kan jeg selv vælge og udskifte måltider?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvilke køkkenredskaber skal jeg have derhjemme?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Kan jeg se næringsindholdet for måltiderne?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvilket måltid skal jeg lave først?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Tager i højde for specifikke behov?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Fandt du ikke hvad du ledte efter?</p>
+        </div>
+    </div>
+    <!-- Svar 4 -->
+    <div class="reply reply4">
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan fungerer Nippon?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvilke måltidskasser tilbyder I?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvordan bestiller jeg en måltidskasse?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Kan jeg se måltiderne uden et abonnement?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Hvad indeholder måltidskassen?</p>
+        </div>
+        <div class="reply-content">
+            <img src="../img/icon/plus.webp" alt="" class="plus">
+            <p>Fandt du ikke hvad du ledte efter?</p>
+        </div>
+    </div>
+    <!-- Svar 5 -->
+    <div class="reply reply5">
+        This is the reply content for FAQ item 2.
+    </div>
+    <!-- Svar 6 -->
+    <div class="reply reply6">
+        This is the reply content for FAQ item 2.
+    </div>
+  
+
 </section>
+
+ <br><br><br><br><br><br><br><br>
 
 </main>
 
-<footer class="footer-container">
+
+<!-- <footer class="footer-container">
     <div class="footermenu">
       <h3>Navigation</h3>
       <ul>
@@ -144,7 +289,7 @@
 </footer>
 <div class="footercopyright">
     <p>Nippon @ 2024</p>
-</div>
+</div> -->
 
 <script src="../js/script.js"></script>
 </body>
