@@ -438,6 +438,25 @@ h1 {
     width: 85px;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.faq_icon:hover{
+    box-shadow: 0 10 10 8 2 var(--primary) ;
+    opacity: 50%;
+    border-radius: 100px;
+    transform: scale(1.2);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.faq_icon:active{
+    box-shadow: 0 10 10 8 2 var(--primary) ;
+    opacity: 50%;
+    border-radius: 100px;
+    
 }
 
 h4 {
@@ -524,8 +543,9 @@ form{
     width: 3% ;
 }
 
-.visaicon{
+.cardicon{
     width: 7%;
+    height: 50%;
     border: solid var(--primary) 2px;
     border-radius: 10px;
     padding: 1em;
@@ -535,6 +555,14 @@ form{
 .personal{
     font-size: 2.2em;
     color: var(--primary);
+}
+
+.betalingsinfo{
+    margin-top: 75px;
+}
+
+.personalinfo{
+    margin-top: 75px;
 }
 
 /************* Footer **************/
