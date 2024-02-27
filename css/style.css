@@ -1032,8 +1032,7 @@ form{
     flex-direction: column;
     color: var(--primary);
     width: 300px;
-    height: 400px;
-    padding: 50px 10px;
+    height: 500px;
 }
 
 .box p {
