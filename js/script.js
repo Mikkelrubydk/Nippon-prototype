@@ -71,5 +71,35 @@ $(document).ready(function() {
     });
 });
 
+// Bestil 
+function scrollLeft() {
+    const slider = document.querySelector('.slider');
+    const slideWidth = slider.querySelector('.product').offsetWidth;
+    const scrollLeft = slider.scrollLeft;
+    const scrollAmount = 200; // Angiv her, hvor meget du vil rulle mod venstre
+
+    console.log("Scroll Left:", scrollLeft, "Slide Width:", slideWidth);
+
+    if (scrollLeft <= 0) {
+        slider.scrollLeft = slider.scrollWidth - slider.clientWidth;
+    } else {
+        slider.scrollBy(-scrollAmount, 0); // Rul mod venstre med den angivne scrollAmount
+    }
+}
+
+function scrollRight() {
+    const slider = document.querySelector('.slider');
+    const slideWidth = slider.querySelector('.product').offsetWidth;
+    const scrollLeft = slider.scrollLeft;
+    const scrollAmount = 255; // Angiv her, hvor meget du vil rulle
+
+    console.log("Scroll Left:", scrollLeft, "Slide Width:", slideWidth);
+
+    if (scrollLeft >= (slider.scrollWidth - slider.clientWidth)) {
+        slider.scrollLeft = 0;
+    } else {
+        slider.scrollBy(scrollAmount, 0); // Rul med den angivne scrollAmount
+    }
+}
 
 
