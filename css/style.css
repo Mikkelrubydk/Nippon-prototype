@@ -394,7 +394,6 @@ h1 {
 .mockupvarevogn_transparant{
     width: 50%;
     margin-right: 40px;
-
 }
 
 .jord_til_bord {
@@ -488,23 +487,28 @@ h4 {
 form{
     width: 100%;
 }
+
+.inputbox{
+    display: flex;
+}
 .payment{
     display: flex;
     justify-content: center;
 }
 
-label {
+.labelpay {
     font-size: 25px;
-    line-height: 50px;
+    line-height: 80px;
+    color: var(--primary);
 }
 
 .infobox {
-    height: 1.5em;
+    height: 2.2em;
     width: 100%;
     display: block;
     position: relative;
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 8px 40px 8px 20px;
     border: none;
     box-shadow: 0 5px 8px 3px #f3eadf;
@@ -513,20 +517,26 @@ label {
 .names{
     display: flex;
     position: row;
-    gap: 40px;}
-
-.imgpay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 100%;
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-size: 18px;
+    gap: 40px;
 }
+
+.payicon{
+    width: 3% ;
+}
+
+.visaicon{
+    width: 7%;
+    border: solid var(--primary) 2px;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.personal{
+    font-size: 2.2em;
+    color: var(--primary);
+}
+
 /************* Footer **************/
 
 .footer-container {
