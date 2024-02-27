@@ -763,7 +763,7 @@ h4 {
     flex-direction: row
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: row;
 }
@@ -772,7 +772,7 @@ main img {
     height: auto;
     width: 1500px;
     margin-right: -285px;
-}
+} */
 
 .tekst-box {
     display: flex;
