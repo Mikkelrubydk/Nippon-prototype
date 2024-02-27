@@ -365,9 +365,9 @@ h1 {
 
 /************* Sådan fungerer det **************/
 
-.faqmain {
+/* .faqmain {
     height: 100%;
-}
+} */
 
 .gif img {
     width: 100%;
@@ -435,13 +435,6 @@ h1 {
     justify-content: center;
 }
 
-.faqer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
 h4 {
     text-align: center;
     font-family: "League Spartan", sans-serif;;
@@ -477,25 +470,33 @@ h4 {
     margin-right: 10px; /* Example margin for spacing between image and paragraph */
 }
 
+/* Fandt du ikke det du ledte efter */
 
-/************* Betalings oplysninger **************/
-.payment{
-    display: flex;
-    justify-content: center;
-
-}
-
-label {
-    font-size: 20px;
-    line-height: 50px;
-}
-
-input {
-    height: 30px;
-    width: 70%;
-    display: inline-block;
-    position: relative;
-}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
 
 /************* Footer **************/
 
@@ -790,16 +791,16 @@ input {
     flex-direction: row
 }
 
-.starterpakke-main {
+/* main {
     display: flex;
     flex-direction: row;
 }
 
-.starterpakke-main img {
+main img {
     height: auto;
     width: 1500px;
     margin-right: -285px;
-} 
+} */
 
 .tekst-box {
     display: flex;
