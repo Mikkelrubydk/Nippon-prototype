@@ -447,7 +447,7 @@ h4 {
 
 }
 
-/* fold dowen */
+/* fold down */
 
 .reply {
     display: none; /* Hide the reply content initially */
@@ -472,6 +472,52 @@ h4 {
     width: 30px; /* Example width for the image */
     height: 30px; /* Example height for the image */
     margin-right: 10px; /* Example margin for spacing between image and paragraph */
+}
+
+
+/************* Betalings oplysninger **************/
+form{
+    width: 100%;
+}
+.payment{
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+input {
+    height: 1.5em;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px #f3eadf;
+}
+
+.names{
+    display: flex;
+    position: row;
+    gap: 40px;
+}
+
+.imgpay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
 }
 
 /************* Footer **************/
