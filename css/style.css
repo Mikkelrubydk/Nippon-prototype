@@ -489,7 +489,7 @@ label {
     line-height: 50px;
 }
 
-input {
+.infobox {
     height: 1.5em;
     width: 100%;
     display: block;
