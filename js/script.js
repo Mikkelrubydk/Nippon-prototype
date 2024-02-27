@@ -60,33 +60,22 @@ document.addEventListener("DOMContentLoaded", function() {
 // FAQ
 
 $(document).ready(function() {
+    // Håndterer klik på spørgsmål for at vise svar
     $(".fold_reply").click(function() {
-        var target = $(this).data("target"); // får target reply div fra data attribute
+        var target = $(this).data("target");
         
-        //  Denne linje skjuler alle "reply" div'er undtagen den, der er klikket på
+        // Skjuler alle "reply" div'er undtagen den, der er klikket på
         $(".reply").not(target).slideUp("fast");
         
-        // Dette betyder, at hvis den "reply" div er skjult, vil den glide ned og blive synlig, og hvis den allerede er synlig, vil den glide op og blive skjult.
+        // Toggler synligheden af målrettet "reply" div
         $(target).slideToggle("slow");
     });
+
+    // Håndterer klik på plus-ikon for at vise dropdown-indhold
+    $(".plus").click(function() {
+        $(this).next('.dropdown-content').slideToggle("slow");
+    });
 });
-
-// Under FAQ
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
 
 
 
