@@ -71,5 +71,18 @@ $(document).ready(function() {
     });
 });
 
+function valgtListeelement(element) {
+    // Find den overordnede sektion
+    var sektion = element.closest('section');
+
+    // Fravælg alle listeelementer i samme sektion
+    var listeelementer = sektion.querySelectorAll('li');
+    listeelementer.forEach(function(li) {
+      li.classList.remove('valgt');
+    });
+
+    // Tilføj valgt klasse til det klikkede element
+    element.classList.add('valgt');
+  }
 
 
