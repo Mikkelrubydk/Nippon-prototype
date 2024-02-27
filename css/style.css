@@ -365,9 +365,9 @@ h1 {
 
 /************* Sådan fungerer det **************/
 
-/* .faqmain {
+.faqmain {
     height: 100%;
-} */
+}
 
 .gif img {
     width: 100%;
@@ -433,6 +433,13 @@ h1 {
     width: 85px;
     align-items: center;
     justify-content: center;
+}
+
+.faqer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 h4 {
