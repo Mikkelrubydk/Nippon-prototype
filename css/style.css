@@ -763,16 +763,16 @@ h4 {
     flex-direction: row
 }
 
-/* main {
+.starterpakke-main {
     display: flex;
     flex-direction: row;
 }
 
-main img {
+.starterpakke-main img {
     height: auto;
     width: 1500px;
     margin-right: -285px;
-} */
+} 
 
 .tekst-box {
     display: flex;
