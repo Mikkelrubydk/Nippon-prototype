@@ -304,10 +304,17 @@ h1 {
     background-color: var(--green);
     width: 150px;
     height: 45px;
+    transition: 1s;
+}
+
+.howtoknap:hover {
+    transform: scale(1.07);
+    transition: 1s;
+    cursor: pointer;
 }
 
 .howtoknap a{
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
 }
@@ -329,6 +336,7 @@ h1 {
     height: 60px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     transition: 1s;
+    z-index: 1;
 }
 
 .fredagsknap a {
@@ -359,6 +367,7 @@ h1 {
 .formetbillede img {
     width: 100%;
     object-fit: cover;
+    z-index: -1;
     
 }
 
