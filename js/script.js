@@ -92,3 +92,4 @@ function valgtListeelement(element) {
   }
 
 
+// kvitering

@@ -421,6 +421,10 @@ h1 {
     line-height: 30px;
 }
 
+.faaq {
+    padding: 50px 0;
+}
+
 .faqer {
     display: flex;
     flex-direction: column;
@@ -482,6 +486,44 @@ h4 {
     border: 1px solid #ddd;
 }
 
+/*********** kvitering *********/
+
+.kvitering_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background: url(../img/kvitering/baggrung.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.baggrund {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 10px;
+}
+
+.kvitering3 {
+    position: absolute;
+    top: 390px;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    margin: 0 auto;
+}
+
+.krys {
+    position: absolute;
+    top: 455px;
+    right: 0;
+    left: 400px;
+    bottom: 10px;
+    margin: 0 auto; 
+    width: 40px;
+}
 
 /************* Betalings oplysninger **************/
 form{
