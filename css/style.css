@@ -1078,12 +1078,12 @@ form{
 .starterpakke-main {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 200px;  
 }
 
 .starterpakke-main img {
     width: 800px;
-    margin-right: -200px;
+    margin-right: -280px;
 }
 
 .tekst-box {
@@ -1135,11 +1135,16 @@ form{
     font-size: 25px;
 }
 
+.enkelte-vare {
+    margin-top: 200px;
+}
+
 .slider-section {
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
+    margin-top: -200px;
 }
 
 .slider {
