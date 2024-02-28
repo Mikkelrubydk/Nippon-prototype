@@ -1072,7 +1072,8 @@ form{
 
 .under-box-tekst {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    gap: 20px;
 }
 
 .starterpakke-main {
