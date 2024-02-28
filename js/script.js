@@ -93,3 +93,15 @@ function scrollRight() {
         slider.scrollLeft += scrollAmount; // Use += to scroll right
     }
 }
+
+function scrollLeft() {
+    const slider = document.querySelector('.slider');
+    const scrollLeft = slider.scrollLeft;
+    const scrollAmount = 250; // Adjust here how much you want to scroll
+
+    if (scrollLeft <= 0) {
+        slider.scrollLeft = slider.scrollWidth - slider.clientWidth;
+    } else {
+        slider.scrollLeft -= scrollAmount; // Use -= to scroll left
+    }
+}
