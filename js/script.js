@@ -105,3 +105,17 @@ function scrollLeft() {
         slider.scrollLeft -= scrollAmount; // Use -= to scroll left
     }
 }
+
+function valgtListeelement(element) {
+    // Find den overordnede sektion
+    var section = element.closest('section');
+
+    // Fravælg alle listeelementer i samme sektion
+    var listeelementer = section.querySelectorAll('li');
+    listeelementer.forEach(function(li) {
+        li.classList.remove('valgt');
+    });
+
+    // Tilføj 'valgt' klassen til det klikkede element
+    element.classList.add('valgt');
+}

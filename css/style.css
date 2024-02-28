@@ -569,10 +569,9 @@ form{
     width: 100%;
 }
 .dag {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
 }
 
 .inputbox{
@@ -832,7 +831,7 @@ form{
     margin-top: 30px;
 }
 
-.personer, .måltider, .dag {
+.personer, .måltider, {
     display: flex;
     justify-content: center;
     align-items: center;
