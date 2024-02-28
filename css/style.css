@@ -1177,15 +1177,13 @@ form{
 }
 
 .enkelte-vare {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .slider-section {
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
-    margin-top: -200px;
 }
 
 .slider {
