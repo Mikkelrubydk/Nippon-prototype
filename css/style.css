@@ -557,8 +557,16 @@ form{
 }
 
 .inputbox{
-    display: flex;
+    display: block;
+    position: relative;
 }
+
+.inputboxinput{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .payment{
     display: flex;
     justify-content: center;
@@ -584,12 +592,12 @@ form{
 
 .names{
     display: flex;
-    position: row;
+    justify-content: row;
     gap: 40px;
 }
 
 .payicon{
-    width: 3% ;
+    width: 3%;
 }
 
 .cardicon{
@@ -608,11 +616,13 @@ form{
 
 .betalingsinfo{
     margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .personalinfo{
     margin-top: 75px;
 }
+
 
 /************* Footer **************/
 

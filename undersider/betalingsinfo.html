@@ -49,43 +49,49 @@
                     <h3 class="personal"> Personlig information</h3> 
                     
                     <div class="names">
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="fname"> Fornavn</label> 
                             <input class="infobox" type="text" id="fname" required> 
                         </div> 
 
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="lname"> Efternavn</label> 
                             <input class="infobox" type="text" id="lname" required> 
                         </div> 
                     </div>    
                     
   
-                    <div class="inputBox"> 
-                        <img class="payicon" src="../img/icon/email.webp" width=25>
-                        <label class="labelpay" for="email"> Email </label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <img class="payicon" src="../img/icon/email.webp" width=25>
+                            <label class="labelpay" for="email"> Email </label> 
+                        </div>
                         <input  class="infobox" type="text" id="email" required> 
                     </div> 
   
-                    <div class="inputBox"> 
-                        <img class="payicon" src="../img/icon/phone.webp" width=25>
-                        <label class="labelpay" for="phone"> Telefon nummer  </label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <img class="payicon" src="../img/icon/phone.webp" width=25>
+                            <label class="labelpay" for="phone"> Telefon nummer  </label> 
+                        </div>
                         <input class="infobox" type="text" id="phone" required> 
                     </div> 
   
-                    <div class="inputBox"> 
-                        <img class="payicon" src="../img/icon/adresse.webp" width=25>
-                        <label class="labelpay" for="adresse"> Adresse </label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <img class="payicon" src="../img/icon/adresse.webp" width=25>
+                            <label class="labelpay" for="adresse"> Adresse </label> 
+                        </div>
                         <input class="infobox" type="text" id="adresse" required> 
                     </div> 
   
                     <div class="leveringinfo">
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="place"> Hvor skal vi stille kassen?</label> 
                             <input class="infobox" type="text" id="place" required> 
                         </div> 
 
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="commentplace"> Kommentarer til levering?</label> 
                             <input class="infobox" type="text" id="commentplace"> 
                         </div> 
@@ -96,37 +102,75 @@
                     <h3 class="personal"> Kort information</h3> 
                     <p>Betalingsmuligheder</p>
                     <img class="cardicon" src="../img/icon/Visa.png" alt="Visa logo">
-                    <img class="cardicon" src="../img/icon/mastercard.svg" alt="Mastercard logo">
 
 
-                    <div class="inputBox"> 
+                    <div class="inputbox"> 
                         <label class="labelpay" for="namepay"> Navn på betalingskortet</label> 
                         <input class="infobox" type="text" id="namepay" required> 
                     </div> 
 
-                    <div class="inputBox"> 
+                    <div class="inputbox"> 
                         <label class="labelpay" for="cardnr"> Kort nummer</label> 
                         <input class="infobox" type="text" id="cardnr" 
                         placeholder="0000 0000 0000 0000" 
                         maxlength="19" required>  
                     </div> 
 
-                    <div class="inputBox"> 
+                    <div class="inputbox"> 
                         <label class="labelpay" for="controlnr"> Kontrol nummer</label> 
                         <input class="infobox" type="text" id="controlnr" 
                         placeholder="000" 
                         maxlength="3" required>  
                     </div>
 
-                    <div class="">
-                        
+                    <div class="inputbox"> 
+                        <label class="labelpay" for="year"> Udløbsdato</label> 
+                        <input class="infobox" type="text" id="year" 
+                        placeholder="00/00" 
+                        maxlength="5" required>  
                     </div>
-
-
                 </div>    
             </form>
         </div>
     </main>
-    <script src="/js/script.js"></script>
+
+    <footer class="footer-container">
+        <div class="footermenu">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="/pages/shop.html">Sådan fungerer det</a></li>
+            <li><a href="/pages/bryggeriet.html">Bestil</a></li>
+            <li><a href="/pages/kontakt.html">Om os</a></li>
+            <li><a href="/pages/kontakt.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footerkontakt">
+          <h3>Kontakt</h3>
+          <ul>
+            <li><a href="mailto:mikkel@trøjborgbryg.dk">Nippon@kontakt.dk</a></li>
+            <li><a href="tel:42610079">Tlf. 56 11 45 29</a></li>
+            <li>Måltidskassevej 14</li>
+            <li>Aarhus C</li>
+            <li>8000 Danmark</li>
+          </ul>
+        </div>
+        <div class="footerinfo">
+          <h3>Vi er Nippon</h3>
+          <p>Autentisk japansk mad direkte til din hoveddør!</p>
+          <div class="socials">
+           <a href="https://www.instagram.com/"><img src="/img/social/instagram.webp" alt="instagram socials"></a>
+           <a href="https://twitter.com/"><img src="/img/social/x.webp" alt="x socials"></a>
+           <a href="https://www.facebook.com/"><img src="/img/social/facebook.webp" alt="facebook socials"></a>
+          </div>
+        </div>
+    </footer>
+
+    <div class="footercopyright">
+        <p>Nippon @ 2024</p>
+    </div>
+
+    <script src="../js/script.js"></script>
+
 </body>
 </html>
