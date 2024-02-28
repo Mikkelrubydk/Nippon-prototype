@@ -52,10 +52,24 @@
     </header>
 
     <main>
-        <h1>Betalings oplysninger</h1>
         <section class="købsprocess">
+            <div onclick="history.go(-1)"class="tilbageknap">&#10132</div>
+            <h1>Betaling og leverings oplysninger</h1>
             <img src="/img/blandtselv/betalingsoversigt.png" alt="købsprogess">
+          </section>
+  
+          <section class="dag">
+            <h3 class="personal">Leveringsdag</h3>
+            <ol>
+                <li onclick="valgtListeelement(this)">Søndag</li>
+                <li onclick="valgtListeelement(this)">Mandag</li>
+                <li onclick="valgtListeelement(this)">Tirsdag</li>
+                <li onclick="valgtListeelement(this)">Onsdag</li>
+                <li onclick="valgtListeelement(this)">Torsdag</li>
+                <li onclick="valgtListeelement(this)">Fredag</li>
+            </ol>
         </section>
+          
         <div class="payment">
             <form action="#">
                 <div class="personalinfo">
@@ -63,12 +77,18 @@
                     
                     <div class="names">
                         <div class="inputbox"> 
-                            <label class="labelpay" for="fname"> Fornavn</label> 
+                            <div class="namewstar">
+                                <label class="labelpay" for="fname"> Fornavn </label> 
+                                <p class="star"> * </p>
+                            </div>
                             <input class="infobox" type="text" id="fname" required> 
                         </div> 
 
                         <div class="inputbox"> 
-                            <label class="labelpay" for="lname"> Efternavn</label> 
+                            <div class="namewstar">
+                                <label class="labelpay" for="lname"> Efternavn</label> 
+                                <p class="star"> * </p>
+                            </div>
                             <input class="infobox" type="text" id="lname" required> 
                         </div> 
                     </div>    
@@ -77,7 +97,11 @@
                     <div class="inputbox"> 
                         <div class="inputboxinput">
                             <img class="payicon" src="../img/icon/email.webp" width=25>
-                            <label class="labelpay" for="email"> Email </label> 
+                            <div class="namewstar">
+                                <label class="labelpay" for="email"> Email </label> 
+                                <p class="star"> * </p>
+                            </div>
+                    
                         </div>
                         <input  class="infobox" type="text" id="email" required> 
                     </div> 
@@ -85,7 +109,11 @@
                     <div class="inputbox"> 
                         <div class="inputboxinput">
                             <img class="payicon" src="../img/icon/phone.webp" width=25>
-                            <label class="labelpay" for="phone"> Telefon nummer  </label> 
+                            <div class="namewstar">
+                                <label class="labelpay" for="phone"> Telefon nummer  </label> 
+                                <p class="star"> * </p>
+                            </div>
+
                         </div>
                         <input class="infobox" type="text" id="phone" required> 
                     </div> 
@@ -93,14 +121,21 @@
                     <div class="inputbox"> 
                         <div class="inputboxinput">
                             <img class="payicon" src="../img/icon/adresse.webp" width=25>
-                            <label class="labelpay" for="adresse"> Adresse </label> 
+                            
+                            <div class="namewstar">
+                                <label class="labelpay" for="adresse"> Adresse </label> 
+                                <p class="star"> * </p>
+                            </div>
                         </div>
                         <input class="infobox" type="text" id="adresse" required> 
                     </div> 
   
                     <div class="leveringinfo">
                         <div class="inputbox"> 
-                            <label class="labelpay" for="place"> Hvor skal vi stille kassen?</label> 
+                            <div class="namewstar">
+                                <label class="labelpay" for="place"> Hvor skal vi stille kassen?</label> 
+                                <p class="star"> * </p>
+                            </div>
                             <input class="infobox" type="text" id="place" required> 
                         </div> 
 
@@ -113,17 +148,23 @@
 
                 <div class="betalingsinfo">
                     <h3 class="personal"> Kort information</h3> 
-                    <p>Betalingsmuligheder</p>
+                    <p class="labelpay">Betalingsmuligheder</p>
                     <img class="cardicon" src="../img/icon/Visa.png" alt="Visa logo">
 
 
                     <div class="inputbox"> 
-                        <label class="labelpay" for="namepay"> Navn på betalingskortet</label> 
+                        <div class="namewstar">
+                            <label class="labelpay" for="namepay"> Navn på betalingskortet</label> 
+                            <p class="star"> * </p>
+                        </div>
                         <input class="infobox" type="text" id="namepay" required> 
                     </div> 
 
                     <div class="inputbox"> 
-                        <label class="labelpay" for="cardnr"> Kort nummer</label> 
+                        <div class="namewstar">
+                            <label class="labelpay" for="cardnr"> Kort nummer</label> 
+                            <p class="star"> * </p>
+                        </div>
                         <input class="infobox" type="text" id="cardnr" 
                         placeholder="0000 0000 0000 0000" 
                         maxlength="19" required>  
@@ -131,13 +172,11 @@
 
                     <div class="inputbox"> 
                         <div class="inputboxinput">
-                            <label class="labelpay" for="controlnr"> Kontrol nummer </label> 
-                            <a href="#" id="infopay"></a><img class="payicon" src="../img/faq/generelt.png" width=25>
-                            <div class="formgroup" id="commentcontrolnr">
-                                <p class="formcontrol" id="commentBox">
-                                    
-                                </p>
-                           </div>
+                            <div class="namewstar">
+                                <label class="labelpay" for="controlnr"> Kontrol nummer </label> 
+                                <p class="star"> * </p>
+                            </div>
+                            <img class="payicon" src="../img/faq/generelt.png" width=25>
                         </div>
                         <input class="infobox" type="text" id="controlnr" 
                         placeholder="000" 
@@ -145,7 +184,10 @@
                     </div>
 
                     <div class="inputbox"> 
-                        <label class="labelpay" for="year"> Udløbsdato</label> 
+                        <div class="namewstar">
+                            <label class="labelpay" for="year"> Udløbsdato</label> 
+                            <p class="star"> * </p>
+                        </div>
                         <input class="infobox" type="text" id="year" 
                         placeholder="00/00" 
                         maxlength="5" required>  
@@ -159,6 +201,7 @@
         </div>
     </main>
     <footer class="footer-container">
+
         <div class="footermenu">
           <h3>Navigation</h3>
           <ul>
@@ -169,6 +212,7 @@
             <li><a href="/pages/kontakt.html">FAQ</a></li>
           </ul>
         </div>
+
         <div class="footerkontakt">
           <h3>Kontakt</h3>
           <ul>
@@ -179,6 +223,7 @@
             <li>8000 Danmark</li>
           </ul>
         </div>
+
         <div class="footerinfo">
           <h3>Vi er Nippon</h3>
           <p>Autentisk japansk mad direkte til din hoveddør!</p>
@@ -188,6 +233,7 @@
            <a href="https://www.facebook.com/"><img src="/img/social/facebook.webp" alt="facebook socials"></a>
           </div>
         </div>
+
     </footer>
     <div class="footercopyright">
         <p>Nippon @ 2024</p>

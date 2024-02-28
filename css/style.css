@@ -17,7 +17,7 @@
     --contrastbeige:#fef7ef9f;
     --green: #8aa357;
     --lightgreen:#CCD6B0;
-    --lightpint:#fde7e9;
+    --lightpink:#fde7e9;
 }
 
 body {
@@ -81,7 +81,7 @@ nav {
 }
 
 .active {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -152,6 +152,7 @@ h1 {
     font-size: 2.5rem;
     padding: 60px 0;
 }
+
 
 /************* Forside **************/
 
@@ -383,9 +384,15 @@ h1 {
     height: 100%;
 }
 
+.gif {
+    margin-bottom: 50px;
+}
+
 .gif img {
     width: 100%;
     object-fit: cover;
+    outline: 1px solid var(--background);
+    outline-offset: -1px;
 }
 
 .mg {
@@ -561,6 +568,12 @@ h4 {
 form{
     width: 100%;
 }
+.dag {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
 .inputbox{
     display: block;
@@ -629,9 +642,15 @@ form{
     margin-top: 75px;
 }
 
-.formggroup{
-    display: none;
-    background-color: var(light);
+.namewstar{
+    display: flex;
+    flex-direction: row;
+}
+
+.star{
+    color: var(--secondary);
+    font-size: 35px;
+    font-weight: 500;
 }
 
 
@@ -813,18 +832,18 @@ form{
     margin-top: 30px;
 }
 
-.personer, .måltider {
+.personer, .måltider, .dag {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-.personer ol, .måltider ol {
+.personer ol, .måltider ol, .dag ol {
     display: flex;
 }
 
-.personer ol li, .måltider ol li {
+.personer ol li, .måltider ol li, .dag ol li {
     background-color: var(--cremewhite);
     padding: 10px 50px;
     font-size: 25px;
@@ -1158,15 +1177,13 @@ form{
 }
 
 .enkelte-vare {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .slider-section {
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
-    margin-top: -200px;
 }
 
 .slider {

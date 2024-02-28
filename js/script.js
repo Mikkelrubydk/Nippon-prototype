@@ -105,5 +105,3 @@ function scrollLeft() {
         slider.scrollLeft -= scrollAmount; // Use -= to scroll left
     }
 }
-
-// Betalingsinfor
