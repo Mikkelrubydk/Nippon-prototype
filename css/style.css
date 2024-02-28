@@ -14,12 +14,14 @@
     --secondary: #a31f25;
     --background: #fef7ef;
     --cremewhite: #F3EADF;
+    --contrastbeige:#fef7ef9f;
     --green: #8aa357;
     --lightgreen:#CCD6B0;
+    --lightpint:#fde7e9;
 }
 
 body {
-    background-color: #fef8f0;
+    background-color:var(--background);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -110,7 +112,7 @@ nav {
 }
 
 .user-dropdown li a:hover {
-    background-color: #fef7ef9f;
+    background-color: var(--contrastbeige);
     font-weight: 600;
 }
 
@@ -625,6 +627,11 @@ form{
 
 .personalinfo{
     margin-top: 75px;
+}
+
+.formggroup{
+    display: none;
+    background-color: var(light);
 }
 
 
