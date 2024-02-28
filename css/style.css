@@ -78,6 +78,10 @@ nav {
     text-decoration: none;
 }
 
+.active {
+    font-weight: 700;
+}
+
 
   .burgermenu {
     display: none;
@@ -1048,7 +1052,7 @@ form{
 .box p {
     font-size: 20px;
     margin: 15px;
-    height: 100px;
+    height: 70px;
 }
 
 .box-h3 {
@@ -1208,7 +1212,7 @@ form{
 }
 
 .slider .arrow {
-    width: 1240px;
+    width: 1500px;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -1217,6 +1221,7 @@ form{
 
 .slider .arrow button {
     font-size: 20px;
+    z-index: 1;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1229,6 +1234,7 @@ form{
 
 .arrow {
 width: 1350px;
+z-index: 1;
 display: flex;
 justify-content: space-between;
 position: absolute;
@@ -1236,7 +1242,7 @@ position: absolute;
 
 .arrow button {
     font-size: 20px;
-    background-color:  var(--primary);
+    background-color: var(--primary);
     color: white;
     width: 50px;
     height: 50px;

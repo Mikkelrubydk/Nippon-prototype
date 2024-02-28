@@ -18,7 +18,7 @@
         <nav id="nav">
             <a href="../index.html"><img class="logo" src="../img/Nipponlogotekst.webp" alt="Nippon Logo"></a>
             <ul class="nav-links">
-                <li><a href="../undersider/faq.html">Sådan fungerer det</a></li>
+                <li><a class="active" href="../undersider/faq.html">Sådan fungerer det</a></li>
                 <li><a href="../undersider/bestil.html">Bestil</a></li>
                 <li><a href="../undersider/404.html">Om os</a></li>        
             </ul>
@@ -30,14 +30,27 @@
             </ul>
 
             <figure class="ikoner">
-                    <img src="../img/icon/soegikon.webp" alt="Search Icon">
-                    <img src="../img/icon/bruger.webp" alt="User Icon">
-                <figure class="burger" aria-expanded="false">
-                    <div class="top-bread"></div>
-                    <div class="meat"></div>
-                    <div class="bottom-bread"></div>
-                </figure>
+                <img src="/img/icon/soegikon.webp" alt="Search Icon">
+                
+                <div class="user-container">
+  
+                    <img src="/img/icon/bruger.webp" alt="User Icon" id="dropdown-trigger">
+                    
+                    <ul class="user-dropdown" id="user-dropdown">
+                        <li><a href="#">Administrer Profil</a></li>
+                        <li><a href="#">Se Abonnement</a></li>
+                        <li><a href="#">Ændre Abonnement</a></li>
+                        <li><a href="#">Afmeld Abonnement</a></li>
+                        
+                    </ul>
+  
+                </div>
+            <figure class="burger" aria-expanded="false">
+                <div class="top-bread"></div>
+                <div class="meat"></div>
+                <div class="bottom-bread"></div>
             </figure>
+        </figure>
         </nav>
     </header>
 
