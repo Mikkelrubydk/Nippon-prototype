@@ -831,7 +831,7 @@ form{
     margin-top: 30px;
 }
 
-.personer, .måltider, {
+.personer, .måltider {
     display: flex;
     justify-content: center;
     align-items: center;
