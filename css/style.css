@@ -14,12 +14,14 @@
     --secondary: #a31f25;
     --background: #fef7ef;
     --cremewhite: #F3EADF;
+    --contrastbeige:#fef7ef9f;
     --green: #8aa357;
     --lightgreen:#CCD6B0;
+    --lightpint:#fde7e9;
 }
 
 body {
-    background-color: #fef8f0;
+    background-color:var(--background);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -110,7 +112,7 @@ nav {
 }
 
 .user-dropdown li a:hover {
-    background-color: #fef7ef9f;
+    background-color: var(--contrastbeige);
     font-weight: 600;
 }
 
@@ -568,8 +570,16 @@ form{
 }
 
 .inputbox{
-    display: flex;
+    display: block;
+    position: relative;
 }
+
+.inputboxinput{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .payment{
     display: flex;
     justify-content: center;
@@ -595,12 +605,12 @@ form{
 
 .names{
     display: flex;
-    position: row;
+    justify-content: row;
     gap: 40px;
 }
 
 .payicon{
-    width: 3% ;
+    width: 3%;
 }
 
 .cardicon{
@@ -619,11 +629,18 @@ form{
 
 .betalingsinfo{
     margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .personalinfo{
     margin-top: 75px;
 }
+
+.formggroup{
+    display: none;
+    background-color: var(light);
+}
+
 
 /************* Footer **************/
 

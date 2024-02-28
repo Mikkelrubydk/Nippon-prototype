@@ -62,43 +62,49 @@
                     <h3 class="personal"> Personlig information</h3> 
                     
                     <div class="names">
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="fname"> Fornavn</label> 
                             <input class="infobox" type="text" id="fname" required> 
                         </div> 
 
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="lname"> Efternavn</label> 
                             <input class="infobox" type="text" id="lname" required> 
                         </div> 
                     </div>    
                     
   
-                    <div class="inputBox"> 
-                        <img class="payicon" src="../img/icon/email.webp" width=25>
-                        <label class="labelpay" for="email"> Email </label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <img class="payicon" src="../img/icon/email.webp" width=25>
+                            <label class="labelpay" for="email"> Email </label> 
+                        </div>
                         <input  class="infobox" type="text" id="email" required> 
                     </div> 
   
-                    <div class="inputBox"> 
-                        <img class="payicon" src="../img/icon/phone.webp" width=25>
-                        <label class="labelpay" for="phone"> Telefon nummer  </label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <img class="payicon" src="../img/icon/phone.webp" width=25>
+                            <label class="labelpay" for="phone"> Telefon nummer  </label> 
+                        </div>
                         <input class="infobox" type="text" id="phone" required> 
                     </div> 
   
-                    <div class="inputBox"> 
-                        <img class="payicon" src="../img/icon/adresse.webp" width=25>
-                        <label class="labelpay" for="adresse"> Adresse </label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <img class="payicon" src="../img/icon/adresse.webp" width=25>
+                            <label class="labelpay" for="adresse"> Adresse </label> 
+                        </div>
                         <input class="infobox" type="text" id="adresse" required> 
                     </div> 
   
                     <div class="leveringinfo">
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="place"> Hvor skal vi stille kassen?</label> 
                             <input class="infobox" type="text" id="place" required> 
                         </div> 
 
-                        <div class="inputBox"> 
+                        <div class="inputbox"> 
                             <label class="labelpay" for="commentplace"> Kommentarer til levering?</label> 
                             <input class="infobox" type="text" id="commentplace"> 
                         </div> 
@@ -109,34 +115,46 @@
                     <h3 class="personal"> Kort information</h3> 
                     <p>Betalingsmuligheder</p>
                     <img class="cardicon" src="../img/icon/Visa.png" alt="Visa logo">
-                    <img class="cardicon" src="../img/icon/mastercard.svg" alt="Mastercard logo">
 
 
-                    <div class="inputBox"> 
+                    <div class="inputbox"> 
                         <label class="labelpay" for="namepay"> Navn på betalingskortet</label> 
                         <input class="infobox" type="text" id="namepay" required> 
                     </div> 
 
-                    <div class="inputBox"> 
+                    <div class="inputbox"> 
                         <label class="labelpay" for="cardnr"> Kort nummer</label> 
                         <input class="infobox" type="text" id="cardnr" 
                         placeholder="0000 0000 0000 0000" 
                         maxlength="19" required>  
                     </div> 
 
-                    <div class="inputBox"> 
-                        <label class="labelpay" for="controlnr"> Kontrol nummer</label> 
+                    <div class="inputbox"> 
+                        <div class="inputboxinput">
+                            <label class="labelpay" for="controlnr"> Kontrol nummer </label> 
+                            <a href="#" id="infopay"></a><img class="payicon" src="../img/faq/generelt.png" width=25>
+                            <div class="formgroup" id="commentcontrolnr">
+                                <p class="formcontrol" id="commentBox">
+                                    
+                                </p>
+                           </div>
+                        </div>
                         <input class="infobox" type="text" id="controlnr" 
                         placeholder="000" 
                         maxlength="3" required>  
                     </div>
 
-                    <div class="">
-                        
+                    <div class="inputbox"> 
+                        <label class="labelpay" for="year"> Udløbsdato</label> 
+                        <input class="infobox" type="text" id="year" 
+                        placeholder="00/00" 
+                        maxlength="5" required>  
                     </div>
-
-
-                </div>    
+                </div>
+                
+                <section class="videreknap">
+                    <div><a href="#">Bekræft ordre</a></div>
+                  </section>
             </form>
         </div>
     </main>
