@@ -1,4 +1,4 @@
-"use strict"
+`use strict`
 
 document.addEventListener('scroll', () => {
     let nav = document.querySelector(`nav`);
