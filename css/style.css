@@ -1038,6 +1038,7 @@ form{
 .box p {
     font-size: 20px;
     margin: 15px;
+    height: 100px;
 }
 
 .box-h3 {
