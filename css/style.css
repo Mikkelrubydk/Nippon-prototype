@@ -1349,7 +1349,6 @@ position: absolute;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    margin-top: 200px;
 }
 
 .fortsæt-knap a {
@@ -1361,6 +1360,10 @@ position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.fortsæt-section div {
+    margin-top: 50px;
 }
 
 .basis-vare-section {
@@ -1383,6 +1386,12 @@ margin-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -300px;
-    margin-bottom: 100px;
+}
+
+.fortsæt-section2 div {
+    margin-top: 50px;
+}
+
+.slider-sektion {
+    height: 70vh;
 }

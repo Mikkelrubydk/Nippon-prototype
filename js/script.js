@@ -111,8 +111,8 @@ function valgtListeelement(element) {
     var section = element.closest('section');
 
     // Fravælg alle listeelementer i samme sektion
-    var listeelementer = section.querySelectorAll('li');
-    listeelementer.forEach(function(li) {
+    var listeElementer = section.querySelectorAll('li');
+    listeElementer.forEach(function(li) {
         li.classList.remove('valgt');
     });
 
